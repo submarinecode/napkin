@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Napkin Contracts
 
-## Getting Started
+Transform quick agreements into legally binding contracts. Write it on a napkin, we'll handle the legal stuff.
 
-First, run the development server:
+## Website Design
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A clean, professional interface featuring:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Visual Design
+- **Theme**: White background with light tan/soft brown accents
+- **Logo**: Basic napkin square outline at a slight angle
+- **Layout**: Napkin logo on the left, contract selection on the right
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Contract Selection Interface
+Five standardized contract templates available as spacebar-shaped buttons:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **NDA (Non-Disclosure Agreement)**
+   - Company names, dates, and confidential information scope
+   - Dropdowns for standard terms, text boxes for custom details
 
-## Learn More
+2. **Website Terms of Service & Privacy Policy**
+   - Company information, service description, data practices
+   - Dropdowns for common clauses, text boxes for specific details
 
-To learn more about Next.js, take a look at the following resources:
+3. **Employment Contract**
+   - Employee details, salary, role, start date
+   - Dropdowns for standard terms, text boxes for custom information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Independent Contractor Agreement**
+   - Contractor and company details, scope of work, payment terms
+   - Dropdowns for standard clauses, text boxes for specific terms
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5. **SAFE Investment Contract**
+   - Company and investor details, investment amount, valuation cap
+   - Dropdowns for standard SAFE terms, text boxes for amounts and dates
 
-## Deploy on Vercel
+### User Flow
+1. **Select Contract Type**: Click on the desired contract button
+2. **Fill in Blanks**: Complete form fields with dropdowns and text boxes
+3. **Review & Sign**: Preview the generated contract and add digital signature
+4. **Download or Share**: Choose to download PDF or share via link
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Technical Features
+- Responsive design for mobile and desktop
+- Real-time contract preview
+- Digital signature capability
+- PDF generation
+- Shareable contract links
+- Professional, calm visual aesthetic
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Inspired by the age-old tradition of writing agreements on napkins, built for the modern web. 

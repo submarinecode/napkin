@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Napkin Contracts - Transform Quick Agreements</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side - Napkin Logo -->
+        <div class="left-panel">
+            <div class="napkin-logo">
+                <div class="napkin-square">
+                    <div class="napkin-fold"></div>
+                    <div class="napkin-text">NAP</div>
+                </div>
+            </div>
+            <h1 class="main-title">Napkin Contracts</h1>
+            <p class="tagline">Transform quick agreements into legally binding contracts</p>
+        </div>
+
+        <!-- Right Side - Contract Selection -->
+        <div class="right-panel">
+            <div class="contract-selection">
+                <h2>Choose Your Contract</h2>
+                <p class="subtitle">Select a template and fill in the details</p>
+                
+                <div class="contract-buttons">
+                    <button class="contract-btn" data-contract="nda">
+                        <span class="btn-text">NDA</span>
+                        <span class="btn-desc">Non-Disclosure Agreement</span>
+                    </button>
+                    
+                    <button class="contract-btn" data-contract="tos">
+                        <span class="btn-text">Website TOS & Privacy</span>
+                        <span class="btn-desc">Terms of Service & Privacy Policy</span>
+                    </button>
+                    
+                    <button class="contract-btn" data-contract="employment">
+                        <span class="btn-text">Employment Contract</span>
+                        <span class="btn-desc">Employee Agreement</span>
+                    </button>
+                    
+                    <button class="contract-btn" data-contract="contractor">
+                        <span class="btn-text">Independent Contractor</span>
+                        <span class="btn-desc">Contractor Agreement</span>
+                    </button>
+                    
+                    <button class="contract-btn" data-contract="safe">
+                        <span class="btn-text">SAFE Investment</span>
+                        <span class="btn-desc">Investment Contract</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Contract Form (Hidden by default) -->
+            <div class="contract-form" id="contractForm" style="display: none;">
+                <div class="form-header">
+                    <button class="back-btn" id="backBtn">← Back to Selection</button>
+                    <h3 id="formTitle">Contract Details</h3>
+                </div>
+                
+                <form id="contractDetailsForm">
+                    <div class="form-fields" id="formFields">
+                        <!-- Dynamic form fields will be inserted here -->
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="preview-btn" id="previewBtn">Preview Contract</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Contract Preview (Hidden by default) -->
+            <div class="contract-preview" id="contractPreview" style="display: none;">
+                <div class="preview-header">
+                    <button class="back-btn" id="backToFormBtn">← Back to Form</button>
+                    <h3>Contract Preview</h3>
+                </div>
+                
+                <div class="preview-content" id="previewContent">
+                    <!-- Contract preview will be inserted here -->
+                </div>
+                
+                <div class="signature-section">
+                    <h4>Digital Signature (Optional)</h4>
+                    <p class="signature-note">Add your digital signature to make this contract legally binding. Digital signatures have the same legal effect as handwritten signatures.</p>
+                    <div class="signature-inputs">
+                        <input type="text" id="signatureName" placeholder="Your full name" class="signature-input">
+                        <input type="date" id="signatureDate" class="signature-input">
+                    </div>
+                </div>
+                
+                <div class="preview-actions">
+                    <button class="download-btn" id="downloadBtn">Download PDF</button>
+                    <button class="share-btn" id="shareBtn">Share Link</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Disclaimer Tab -->
+    <div class="disclaimer-tab" id="disclaimerTab">
+        <span>Legal Disclaimers</span>
+    </div>
+
+    <!-- Disclaimer Modal -->
+    <div class="disclaimer-modal" id="disclaimerModal">
+        <div class="disclaimer-content">
+            <div class="disclaimer-header">
+                <h3>Legal Disclaimers</h3>
+                <button class="close-btn" id="closeDisclaimer">&times;</button>
+            </div>
+            <div class="disclaimer-body">
+                <h4>Important Legal Information</h4>
+                <p><strong>This service is for informational purposes only.</strong> The contracts generated through this application are templates and should not be considered as legal advice.</p>
+                
+                <h4>No Attorney-Client Relationship</h4>
+                <p>Using this service does not create an attorney-client relationship. We are not your attorneys and cannot provide legal advice specific to your situation.</p>
+                
+                <h4>Consult Legal Counsel</h4>
+                <p>Before using any contract template, we strongly recommend consulting with a qualified attorney to ensure the contract meets your specific legal needs and complies with applicable laws in your jurisdiction.</p>
+                
+                <h4>Digital Signatures</h4>
+                <p>Digital signatures may have varying legal validity depending on your jurisdiction. Please verify the legal requirements for digital signatures in your area before relying on them.</p>
+                
+                <h4>No Warranties</h4>
+                <p>This service is provided "as is" without any warranties, express or implied. We disclaim all warranties regarding the accuracy, completeness, or suitability of the contract templates.</p>
+                
+                <h4>Limitation of Liability</h4>
+                <p>We shall not be liable for any damages arising from the use of these contract templates or reliance on the information provided.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
