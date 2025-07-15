@@ -37,35 +37,15 @@ body {
     margin-bottom: 2rem;
 }
 
-.napkin-square {
+.logo-svg {
     width: 120px;
     height: 120px;
-    background: #f8f6f0;
-    border: 2px solid #d4c4a8;
-    position: relative;
-    transform: rotate(-5deg);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.1));
+    transition: transform 0.3s ease;
 }
 
-.napkin-fold {
-    position: absolute;
-    top: -2px;
-    right: -2px;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-bottom: 20px solid #e6dcc4;
-    transform: rotate(45deg);
-}
-
-.napkin-text {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #8b7355;
-    letter-spacing: 2px;
+.logo-svg:hover {
+    transform: scale(1.05);
 }
 
 .main-title {
@@ -346,13 +326,9 @@ body {
         font-size: 2rem;
     }
     
-    .napkin-square {
+    .logo-svg {
         width: 100px;
         height: 100px;
-    }
-    
-    .napkin-text {
-        font-size: 1.2rem;
     }
     
     .signature-inputs {
